@@ -67,7 +67,7 @@ A dynamic quiz application built with React that tests users' knowledge across v
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-git clone https://github.com/yourusername/quiz-app.git
+git clone https://github.com/thisisrow/Quiz-app
 
 2. Navigate to the project directory
 
@@ -93,7 +93,7 @@ The built files will be in the `dist` directory.
 
 ## Deployment
 
-The app is deployed and can be accessed at: [Quiz App Live Demo](your-deployment-url)
+The app is deployed and can be accessed at: [Quiz App Live Demo](https://quiz-app-ecru-two.vercel.app/)
 
 ## Project Structure
 quiz-app/
