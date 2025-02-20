@@ -15,6 +15,7 @@ const History = () => {
   const quizHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
   
   const uniqueHistory = quizHistory.reduce((acc, current) => {
+    // Check for duplicate entries
     const isDuplicate = acc.some(item => 
       item.date === current.date && item.score === current.score
     );
@@ -24,6 +25,7 @@ const History = () => {
     return acc;
   }, []);
 
+  // Sort history by date in descending order
   const sortedHistory = uniqueHistory.sort((a, b) => 
     new Date(b.date) - new Date(a.date)
   );
@@ -94,4 +96,4 @@ const History = () => {
   );
 };
 
-export default History; 
+export default History;

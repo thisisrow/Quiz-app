@@ -132,4 +132,4 @@ const AttemptDetails = () => {
   );
 };
 
-export default AttemptDetails; 
+export default AttemptDetails;

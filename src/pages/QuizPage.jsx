@@ -126,10 +126,16 @@ const QuizPage = () => {
 
   const handleIntegerSubmit = (e) => {
     e.preventDefault();
-    handleAnswer(parseInt(integerAnswer));
+    const parsedAnswer = parseInt(integerAnswer);
+    if (isNaN(parsedAnswer)) {
+      alert("Please enter a valid number.");
+      return;
+    }
+    handleAnswer(parsedAnswer);
   };
 
   const handleSubmitQuiz = () => {
+    // Prevent multiple submissions
     if (hasSubmitted) return;
     
     setSaveCounter(prev => prev + 1);
@@ -144,6 +150,7 @@ const QuizPage = () => {
     };
 
     const existingHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
+    // Check for duplicate entries
     const isDuplicate = existingHistory.some(entry => 
       entry.date === quizResult.date && entry.score === quizResult.score
     );
@@ -168,6 +175,7 @@ const QuizPage = () => {
   };
 
   useEffect(() => {
+    // Reset saveCounter when component unmounts
     return () => {
       setSaveCounter(0);
     };
@@ -274,4 +282,4 @@ const QuizPage = () => {
   );
 };
 
-export default QuizPage; 
+export default QuizPage;
