@@ -1,0 +1,139 @@
+(use react js vite and bootstrap)
+
+
+ Interactive Quiz Platform
+
+Objective:
+
+Develop a quiz platform where users can attempt quizzes, get instant feedback, and track their progress.
+
+Features to Implement
+
+•	Quiz Creation & Management:
+
+•	Display a list of questions in a form of quiz. Use the following questions (
+Multiple-Choice Questions (5 Questions)
+ [
+  {
+    "id": 1,
+    "question": "Which planet is closest to the Sun?",
+    "options": ["Venus", "Mercury", "Earth", "Mars"],
+    "answer": "Mercury",
+    "type": "multiple-choice"
+  },
+  {
+    "id": 2,
+    "question": "Which data structure organizes items in a First-In, First-Out (FIFO) manner?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "answer": "Queue",
+    "type": "multiple-choice"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is primarily used for structuring web pages?",
+    "options": ["Python", "Java", "HTML", "C++"],
+    "answer": "HTML",
+    "type": "multiple-choice"
+  },
+  {
+    "id": 4,
+    "question": "Which chemical symbol stands for Gold?",
+    "options": ["Au", "Gd", "Ag", "Pt"],
+    "answer": "Au",
+    "type": "multiple-choice"
+  },
+  {
+    "id": 5,
+    "question": "Which of these processes is not typically involved in refining petroleum?",
+    "options": ["Fractional distillation", "Cracking", "Polymerization", "Filtration"],
+    "answer": "Filtration",
+    "type": "multiple-choice"
+  }
+ ]
+Integer-Type Questions (5 Questions)
+ [
+  {
+    "id": 1,
+    "question": "What is the value of 12 + 28?",
+    "answer": 40,
+    "type": "integer"
+  },
+  {
+    "id": 2,
+    "question": "How many states are there in the United States?",
+    "answer": 50,
+    "type": "integer"
+  },
+  {
+    "id": 3,
+    "question": "In which year was the Declaration of Independence signed?",
+    "answer": 1776,
+    "type": "integer"
+  },
+  {
+    "id": 4,
+    "question": "What is the value of pi rounded to the nearest integer?",
+    "answer": 3,
+    "type": "integer"
+  },
+  {
+    "id": 5,
+    "question": "If a car travels at 60 mph for 2 hours, how many miles does it travel?",
+    "answer": 120,
+    "type": "integer"
+  }
+ ]
+]
+
+)
+
+•	Allow multiple attempts.  
+
+•	Show attempt history
+
+•	User Interaction:
+
+•	Users can select answers and get instant feedback.
+
+•	Implement timer-based quizzes (e.g., users have 30 seconds per question).
+
+•	Progress Tracking:
+
+•	Show a scoreboard at the end of each quiz.
+
+•	Bonus Challenges:
+
+•	Save quiz history using IndexedDB. 
+
+•	Deployment Requirement:
+
+•	Deploy on Vercel or Netlify and submit a working link.
+
+- Share the deployment link and a GitHub repository link.
+
+---
+
+ Submission Requirements
+
+- Documentation:
+    - Include a README.md file with:
+        - A summary of the features.
+        - Instructions to run the app locally.
+        - A link to the deployed app.
+- Code Quality:
+    - Ensure modular, clean, and maintainable code.
+    - Use comments to explain non-trivial logic.
+
+ Evaluation Criteria
+
+1.	Code Quality – Clean, modular, and well-structured code with proper folder organization.
+
+2.	Edge Case Handling – Robust validation for user inputs, timer expiration, and error handling.
+
+3.	UI/UX Design – Modern, responsive, and user-friendly interface with smooth interactions.
+
+4.	Quiz Logic – Accurate implementation of multiple attempts, instant feedback, and scoring.
+
+5.	Deployment – Fully functional deployment on Vercel/Netlify, mobile-friendly design.
+
+6.	Bonus Features – Completion of bonus tasks will earn extra points.
